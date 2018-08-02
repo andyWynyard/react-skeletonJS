@@ -22,7 +22,7 @@ const link = withNotes(instructions)(() => {
         color={color}
         textDecoration={textDecoration}
         hoverTextDecoration={hoverTextDecoration}>
-        Hi there, I'm a link
+        Hi there, I'm a link bro.
       </Link>
     </div>
   );

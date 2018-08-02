@@ -3,7 +3,7 @@ import 'typeface-roboto';
 
 import { storiesOf } from '@storybook/react';
 
-import bg from '../src/media/Håkan Maverick.jpeg';
+import bg from '../src/media/HakanMaverick.jpeg';
 
 const textImport = `import {componentName, anotherComponent} from '@andy-wynyard/maverick-react-component';`;
 

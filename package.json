@@ -9,7 +9,7 @@
     "demo": "node scripts/demo.js",
     "test": "node scripts/test.js --env=jsdom",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o dist"
+    "build-storybook": "build-storybook -c .storybook -o build"
   },
   "repository": {
     "type": "git",

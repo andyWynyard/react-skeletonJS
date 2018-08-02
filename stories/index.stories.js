@@ -117,12 +117,18 @@ storiesOf('Welcome to Maverick by Sigma', module).add(
           <h3>List of TODO's for this:</h3>
           <ul>
             <li>
-              Host this somewhere to utilise Storybook's power (temp hosted on
-              Andy's githubpages)
+              <del>
+                Host this somewhere to utilise Storybook's power (temp hosted on
+                Andy's githubpages)
+              </del>{' '}
+              Now on netlify
             </li>
             <li>
-              Have a CI build automatically trigger a build to the static site
-              on master merge.
+              <del>
+                Have a CI build automatically trigger a build to the static site
+                on master merge.
+              </del>{' '}
+              When a master merge/push is made, a build process is run.
             </li>
             <li>
               Have a CI build automatically trigger publish to NPM on a master

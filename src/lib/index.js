@@ -1,8 +1,4 @@
-import Example from './components/Example';
-import SecondExample from './components/SecondExample';
+import Heading1 from './components/Heading1';
+import Button from './components/atoms/Button';
 
-export default Example;
-
-export {
-  SecondExample,
-};
+export { Heading1, Button };

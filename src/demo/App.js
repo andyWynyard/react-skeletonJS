@@ -1,11 +1,16 @@
 import React from 'react';
-import Example from '../lib';
-import { SecondExample } from '../lib';
+import { Button } from '../lib';
 
 const App = () => (
   <div>
-    <Example />
-    <SecondExample />
+    <Button
+      backgroundColor="#fff"
+      padding="10px 20px"
+      color="tomato"
+      borderRadius="3px"
+      fontSize="20px">
+      Button
+    </Button>
   </div>
 );
 

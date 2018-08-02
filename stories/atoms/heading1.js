@@ -1,8 +1,7 @@
 import React from 'react';
 import 'typeface-roboto';
 
-import { boolean, select, text } from '@storybook/addon-knobs/react';
-import { ShowStaticMarkup } from 'react-storybook-addon-static-markup';
+import { text } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
 import instructions from './markdown/heading1.md';
@@ -15,11 +14,9 @@ const heading1 = withNotes(instructions)(() => {
 
   return (
     <div style={{ padding: '20px' }}>
-      <ShowStaticMarkup>
-        <Heading1 fontFamily={fontFamily} color={color}>
-          {innerText}
-        </Heading1>
-      </ShowStaticMarkup>
+      <Heading1 fontFamily={fontFamily} color={color}>
+        {innerText}
+      </Heading1>
     </div>
   );
 });

@@ -5,6 +5,8 @@ import { storiesOf } from '@storybook/react';
 
 import bg from '../src/media/Håkan Maverick.jpeg';
 
+const textImport = `import {componentName, anotherComponent} from '@andy-wynyard/maverick-react-component';`;
+
 const divStyle = {
   position: 'relative',
   padding: '1000px;',
@@ -57,6 +59,22 @@ storiesOf('Welcome to Maverick by Sigma', module).add(
 
           <h3>Using Components</h3>
 
+          <p>
+            To use the components here, run:
+            <pre>
+              <code style={codeStyle}>
+                npm i @andy-wynyard/maverick-react-component
+              </code>
+            </pre>
+            The components will then be avaliable for import via:
+            <pre>
+              <code style={codeStyle}>{textImport}</code>
+            </pre>
+            The reason for the @ is because this is a private NPM repo, and it
+            is as such scoped. You wont be able to access this if you have not
+            been given access.
+          </p>
+
           <p style={{ color: 'tomato' }}>
             The atomic design concept is used to organise these components.
           </p>
@@ -98,7 +116,10 @@ storiesOf('Welcome to Maverick by Sigma', module).add(
 
           <h3>List of TODO's for this:</h3>
           <ul>
-            <li>Host this somewhere to utilise Storybook's power</li>
+            <li>
+              Host this somewhere to utilise Storybook's power (temp hosted on
+              Andy's githubpages)
+            </li>
             <li>
               Have a CI build automatically trigger a build to the static site
               on master merge.

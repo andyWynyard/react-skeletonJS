@@ -7,7 +7,9 @@ import { withKnobs } from '@storybook/addon-knobs/react';
 
 import button from './atoms/button';
 import heading1 from './atoms/heading1';
+import heading2 from './atoms/heading2';
 import input from './atoms/input';
+import link from './atoms/link';
 
 const stories = storiesOf('Maverick|Atoms', module);
 
@@ -24,4 +26,6 @@ stories
 
   .add('Button', button)
   .add('Heading1', heading1)
-  .add('Input', input);
+  .add('Heading2', heading2)
+  .add('Input', input)
+  .add('Link', link);

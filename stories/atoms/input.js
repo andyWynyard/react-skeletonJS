@@ -4,7 +4,6 @@ import 'typeface-roboto';
 import Input from '../../src/lib/components/atoms/Input';
 
 import { boolean, select, text } from '@storybook/addon-knobs/react';
-import { ShowStaticMarkup } from 'react-storybook-addon-static-markup';
 import { withNotes } from '@storybook/addon-notes';
 
 // import instructions from './markdown/input.md';
@@ -15,6 +14,8 @@ const input = withNotes('instructions')(() => {
   const border = text('border', '1px solid tomato');
   const borderRadius = text('borderRadius', '3px');
   const width = text('width', '100%');
+  const margin = text('margin', '5px');
+  const padding = text('padding', '5px 10px');
 
   const type = select(
     'type',
@@ -48,17 +49,17 @@ const input = withNotes('instructions')(() => {
 
   return (
     <div style={{ padding: '20px' }}>
-      <ShowStaticMarkup>
-        <Input
-          color={color}
-          fontSize={fontSize}
-          border={border}
-          borderRadius={borderRadius}
-          type={type}
-          placeholder={placeholder}
-          width={width}
-        />
-      </ShowStaticMarkup>
+      <Input
+        color={color}
+        fontSize={fontSize}
+        border={border}
+        borderRadius={borderRadius}
+        type={type}
+        placeholder={placeholder}
+        width={width}
+        padding={padding}
+        margin={margin}
+      />
     </div>
   );
 });

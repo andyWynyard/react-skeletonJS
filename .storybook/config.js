@@ -1,5 +1,4 @@
 import { configure, setAddon, addDecorator } from '@storybook/react';
-import staticMarkup from 'react-storybook-addon-static-markup';
 import { setOptions } from '@storybook/addon-options';
 
 setOptions({
@@ -23,6 +22,5 @@ function loadStories() {
 }
 
 configure(() => {
-  setAddon(staticMarkup);
   loadStories();
 }, module);

@@ -1,6 +1,8 @@
 import React from 'react';
 import 'typeface-roboto';
 
+import { ThemeProvider } from 'styled-components';
+
 import { text } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -12,8 +14,18 @@ const heading1 = withNotes(instructions)(() => {
   const innerText = text('innerText', 'Hi there');
   const fontFamily = text('fontFamily', 'Roboto');
 
+  const theme = {
+    h1: {
+      primaryColor: 'rebeccapurple'
+    }
+  };
+
   return (
     <div style={{ padding: '20px' }}>
+      <ThemeProvider theme={theme}>
+        <Heading1 primary>Themed H1</Heading1>
+      </ThemeProvider>
+
       <Heading1 fontFamily={fontFamily} color={color}>
         {innerText}
       </Heading1>

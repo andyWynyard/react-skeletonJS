@@ -3,6 +3,7 @@
   "version": "0.0.8",
   "description": "Org NPM shared React modules for usage across projects. Only accessable/shareable within org.",
   "main": "build/index.js",
+  "private": true,
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",

@@ -1,5 +1,9 @@
 import React from 'react';
-import { boolean, select, text } from '@storybook/addon-knobs/react';
+import { ThemeProvider } from 'styled-components';
+
+import 'typeface-roboto';
+
+import { boolean, object, text } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
 import instructions from './markdown/button.md';
@@ -16,8 +20,39 @@ const button = withNotes(instructions)(() => {
   const hoverColor = text('hoverColor', 'blue', 'Hover');
   const hoverBackgroundColor = text('hoverBackgroundColor', 'tomato', 'Hover');
 
+  const primaryColor = 'green';
+  const secondaryColor = 'tomato';
+
+  const theme = object(
+    'Theme',
+    {
+      button: {
+        primaryColor: primaryColor,
+        secondaryColor: secondaryColor,
+        buttonBorder: '1px solid',
+        buttonRadius: '3px',
+        buttonPadding: '10px 20px',
+        buttonFontSize: '50px',
+        buttonBackgroundColor: '#fff',
+        hoverColorPrimary: 'white',
+        hoverColorSecondary: 'white'
+      }
+    },
+    'Theme'
+  );
+
   return (
     <div style={{ padding: '20px' }}>
+      <ThemeProvider theme={theme.button}>
+        <div>
+          <Button primary>Primary Themed Button</Button>
+          <br />
+          <br />
+          <Button secondary>Secondary Themed Button</Button>
+        </div>
+      </ThemeProvider>
+      <br />
+      <br />
       <Button
         hoverBackgroundColor={hoverBackgroundColor}
         hoverColor={hoverColor}

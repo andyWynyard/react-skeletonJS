@@ -1,6 +1,6 @@
 {
   "name": "@andy-wynyard/maverick-react-component",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Org NPM shared React modules for usage across projects. Only accessable/shareable within org.",
   "main": "build/index.js",
   "scripts": {

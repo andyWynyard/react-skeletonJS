@@ -10,7 +10,7 @@ import instructions from './markdown/button.md';
 import Button from '../../src/lib/components/atoms/Button';
 
 const button = withNotes(instructions)(() => {
-  const innerText = text('Text', 'CONTENT');
+  const innerText = text('Text', 'Hio there');
   const border = text('border', '3px dotted tomato');
   const color = text('color', 'tomato');
   const borderRadius = text('borderRadius', '100px');

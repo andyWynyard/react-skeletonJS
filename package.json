@@ -8,7 +8,7 @@
     "build": "node scripts/build.js",
     "demo": "node scripts/demo.js",
     "test": "node scripts/test.js --env=jsdom",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6010",
     "build-storybook": "build-storybook -c .storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },

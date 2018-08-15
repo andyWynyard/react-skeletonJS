@@ -3,5 +3,6 @@ import Heading2 from './components/atoms/Heading2';
 import Button from './components/atoms/Button';
 import Input from './components/atoms/Input';
 import Link from './components/atoms/Link';
+import BoxedHeading from './components/molecules/BoxedHeading';
 
-export { Heading1, Heading2, Button, Input, Link };
+export { Heading1, Heading2, Button, Input, Link, BoxedHeading };

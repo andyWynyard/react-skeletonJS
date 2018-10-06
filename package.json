@@ -1,6 +1,6 @@
 {
   "name": "@andy-wynyard/maverick-react-component",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Org NPM shared React modules for usage across projects. Only accessable/shareable within org.",
   "main": "build/index.js",
   "scripts": {
@@ -35,7 +35,9 @@
     "autoprefixer": "7.1.6",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
-    "babel-loader": "^7.1.5",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "6.26.0",
+    "babel-loader": "7.1.2",
     "babel-preset-react-app": "^3.1.2",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
     "chalk": "1.1.3",

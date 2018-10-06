@@ -13,6 +13,7 @@ import heading3 from "./atoms/heading3";
 import heading4 from "./atoms/heading4";
 import input from "./atoms/input";
 import link from "./atoms/link";
+import loadingIcon from "./atoms/loadingIcon";
 
 const stories = storiesOf("Maverick|Atoms", module);
 
@@ -34,4 +35,5 @@ stories
   .add("Heading3", heading3)
   .add("Heading4", heading4)
   .add("Input", input)
-  .add("Link", link);
+  .add("Link", link)
+  .add("Loading Icon", loadingIcon);

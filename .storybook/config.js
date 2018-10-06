@@ -1,8 +1,8 @@
-import { configure, setAddon, addDecorator } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
+import { configure, setAddon, addDecorator } from "@storybook/react";
+import { setOptions } from "@storybook/addon-options";
 
 setOptions({
-  name: 'Maverick component repository',
+  name: "Maverick component repository version: 0.0.14",
   // THEME CAN ONLY BE USED IN V4 - STILL IN ALPHA
   // theme: {
   //   ...themes.normal,
@@ -15,7 +15,7 @@ setOptions({
 
 // automatically import all files ending in *.stories.js
 
-const req = require.context('../stories', true, /\.stories\.js$/);
+const req = require.context("../stories", true, /\.stories\.js$/);
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));

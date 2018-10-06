@@ -6,6 +6,7 @@ import { checkA11y } from "@storybook/addon-a11y";
 import { withKnobs } from "@storybook/addon-knobs/react";
 
 import button from "./atoms/button";
+import errorText from "./atoms/errorText";
 import heading1 from "./atoms/heading1";
 import heading2 from "./atoms/heading2";
 import heading3 from "./atoms/heading3";
@@ -27,6 +28,7 @@ stories
   ))
 
   .add("Button", button)
+  .add("ErrorText", errorText)
   .add("Heading1", heading1)
   .add("Heading2", heading2)
   .add("Heading3", heading3)

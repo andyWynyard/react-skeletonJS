@@ -1,8 +1,10 @@
-import { configure, setAddon, addDecorator } from "@storybook/react";
-import { setOptions } from "@storybook/addon-options";
+import { configure, setAddon, addDecorator } from '@storybook/react'
+import { setOptions } from '@storybook/addon-options'
+
+import { version } from '../package.json'
 
 setOptions({
-  name: "Maverick component repository version: 0.0.14",
+  name: `Skeleton JS for React: ${version}`,
   // THEME CAN ONLY BE USED IN V4 - STILL IN ALPHA
   // theme: {
   //   ...themes.normal,
@@ -10,17 +12,17 @@ setOptions({
   // },
   hierarchySeparator: /\//,
   hierarchyRootSeparator: /\|/,
-  goFullScreen: false
-});
+  goFullScreen: false,
+})
 
 // automatically import all files ending in *.stories.js
 
-const req = require.context("../stories", true, /\.stories\.js$/);
+const req = require.context('../stories', true, /\.stories\.js$/)
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach(filename => req(filename))
 }
 
 configure(() => {
-  loadStories();
-}, module);
+  loadStories()
+}, module)

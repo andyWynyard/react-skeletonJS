@@ -1,3 +1,2 @@
-import Heading from './Heading'
-// This is a test, ignore
-export default Heading
+import H from './Heading'
+export default H
